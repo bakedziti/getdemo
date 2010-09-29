@@ -19,7 +19,13 @@ namespace gitdemo
 
         private static Dictionary<Person, Address> CreatePersonAndAddress()
         {
-            throw new NotImplementedException();
+            Person p = new Person()
+            {
+                FirstName = "Joseph",
+                LastName = "DeCarlo"
+            };
+
+            return null;
         }
 
     }
