@@ -25,7 +25,19 @@ namespace gitdemo
                 LastName = "DeCarlo"
             };
 
-            return null;
+            Address address = new Address()
+            {
+                StreetAddress = "250 Williams",
+                City = "Atlanta",
+                State = "GA",
+                ZipCode = 30303
+            };
+
+            var d = new Dictionary<Person, Address>();
+
+            d.Add(p, address);
+
+            return d;
         }
 
     }
